@@ -30,6 +30,10 @@
 
 #define MAXFONTCHAR 256
 
+#if defined(__cplusplus)
+extern "C" {
+#endif
+
 typedef enum {
   TIC_UNIFORM_INT,
   TIC_UNIFORM_VEC2I,
@@ -160,10 +164,6 @@ typedef struct tc_Core {
 } tc_Core;
 
 extern tc_Core Core;
-
-#if defined(__cplusplus)
-extern "C" {
-#endif
 
 /**********************
  * Core
